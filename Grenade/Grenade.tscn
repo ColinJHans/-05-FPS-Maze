@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Assets/grenade_vintage.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://Grenade/Grenade.gd" type="Script" id=2]
+
+[sub_resource type="CapsuleShape" id=1]
+radius = 0.0324534
+height = 0.002
+
+[node name="Grenade" type="Area"]
+transform = Transform( 7.5, 0, 0, 0, 7.5, 0, 0, 0, 7.5, 0, 0, 0 )
+script = ExtResource( 2 )
+
+[node name="OmniLight" type="OmniLight" parent="."]
+light_color = Color( 0.960784, 0.866667, 0.105882, 1 )
+light_energy = 5.0
+omni_range = 10.0
+omni_attenuation = 2.0
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0 )
+shape = SubResource( 1 )
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+mesh = ExtResource( 1 )
+
+[connection signal="body_entered" from="." to="." method="_on_Grenade_body_entered"]
