@@ -26,12 +26,9 @@ func get_input():
 		input_dir += -Camera.global_transform.basis.x
 	if Input.is_action_pressed("right"):
 		input_dir += Camera.global_transform.basis.x 
-	if Input.is_action_pressed("use"):
-		explode()
 	input_dir = input_dir.normalized()
 	return input_dir
-func explode():
-	pass
+
 func _unhandled_input(event):
 	if event is InputEventMouseMotion:
 		$Pivot.rotate_x(event.relative.y * mouse_sensitivity)

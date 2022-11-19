@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Assets/grenade_vintage.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://Player/Player.gd" type="Script" id=2]
+
+[sub_resource type="CapsuleShape" id=3]
+radius = 0.5
+height = 2.0
+
+[sub_resource type="BoxShape" id=4]
+extents = Vector3( 0.5, 0.1, 0.5 )
+
+[node name="Player" type="KinematicBody"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -49, 0, 0 )
+script = ExtResource( 2 )
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+
+[node name="Body" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0.75, 0 )
+shape = SubResource( 3 )
+
+[node name="Feet" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.75, 0 )
+shape = SubResource( 4 )
+
+[node name="Pivot" type="Spatial" parent="."]
+transform = Transform( -1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 1.25, 0 )
+
+[node name="Camera" type="Camera" parent="Pivot"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.60328e-08, 0.185745, -0.29778 )
+
+[node name="Grenade" type="MeshInstance" parent="Pivot"]
+transform = Transform( -5, 0, -4.37114e-07, 0, 5, 0, 4.37114e-07, 0, -5, 0.513177, 0.0110556, -1.11003 )
+visible = false
+mesh = ExtResource( 1 )
+skeleton = NodePath("../..")

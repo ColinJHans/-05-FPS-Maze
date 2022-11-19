@@ -5,6 +5,10 @@ const SAVE_PATH = "res://settings.cfg"
 var save_file = ConfigFile.new()
 var inputs = ["left","right","forward","back"]
 var score = 0
+var which_player = 0
+var player2id = -1
+var mp = false
+
 
 func _ready():
 	pause_mode = Node.PAUSE_MODE_PROCESS

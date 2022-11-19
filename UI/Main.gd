@@ -12,3 +12,7 @@ func _on_Quit_pressed():
 
 func _on_Play_pressed():
 	get_tree().change_scene("res://Levels/Level1.tscn")
+
+
+func _on_Multiplayer_pressed():
+	get_tree().change_scene("res://Multiplayer.tscn")
