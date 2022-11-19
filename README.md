@@ -1,9 +1,8 @@
 # 05-FPS-Maze
-# Project Name
-Context and date
+Prihect for MSCH-C 220
 
 Description
-
+Basic First Person Maze
 ## Implementation
 + added an enemy
 + a somewhat elaborate level with a clear win con
@@ -17,7 +16,8 @@ Music: https://patrickdearteaga.com/royalty-free-music/ "Not Giving Up"
 Zombie Sound Effect: https://freesound.org/people/gneube/sounds/315844/
 Key Sound Effect: https://freesound.org/people/ProjectsU012/sounds/341695/
 ## Future Development
-I tried to make a grenade to blow up a wall but was ultimately unsuccessful so that
+Grenades to blow up specific terrain
+Zombies following a path
 More levels
 ## Created by
 Colin Hans
