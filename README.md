@@ -1,7 +1,7 @@
 # 05-FPS-Maze
-Prihect for MSCH-C 220
+Project for MSCH-C 220
 
-Description
+
 Basic First Person Maze
 ## Implementation
 + added an enemy
