@@ -5,7 +5,7 @@
 [ext_resource path="res://Exit/Exit.gd" type="Script" id=3]
 [ext_resource path="res://UI/InputRemapMenu.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Enemy/Enemy.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Assets/Music.ogg" type="AudioStream" id=6]
+[ext_resource path="res://UI/Not Giving Up.ogg" type="AudioStream" id=6]
 [ext_resource path="res://Assets/KeySound.wav" type="AudioStream" id=7]
 [ext_resource path="res://Assets/ZombieSound.wav" type="AudioStream" id=8]
 [ext_resource path="res://UI/UI.gd" type="Script" id=9]
@@ -16,8 +16,10 @@
 size = Vector2( 100, 50 )
 
 [sub_resource type="SpatialMaterial" id=6]
-albedo_color = Color( 0.2, 0, 0.25098, 1 )
-metallic = 0.43
+metallic = 1.0
+metallic_specular = 1.0
+roughness = 0.46
+roughness_texture_channel = 4
 
 [sub_resource type="ConvexPolygonShape" id=7]
 points = PoolVector3Array( -50, 0, -25, -50, 0, 25, 50, 0, -25, 50, 0, 25 )
