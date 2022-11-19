@@ -16,8 +16,8 @@ Music: https://patrickdearteaga.com/royalty-free-music/ "Not Giving Up"
 Zombie Sound Effect: https://freesound.org/people/gneube/sounds/315844/
 Key Sound Effect: https://freesound.org/people/ProjectsU012/sounds/341695/
 ## Future Development
-Grenades to blow up specific terrain
-Zombies following a path
-More levels
++ Grenades to blow up specific terrain
++ Zombies following a path
++ More levels
 ## Created by
 Colin Hans
