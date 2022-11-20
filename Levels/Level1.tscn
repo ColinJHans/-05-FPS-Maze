@@ -236,6 +236,9 @@ height = 6.0
 depth = 1.0
 material = ExtResource( 11 )
 
+[node name="Enemy2" parent="Maze" instance=ExtResource( 5 )]
+transform = Transform( -0.0517637, 0, -0.193185, 0, 0.2, 0, 0.193185, 0, -0.0517637, 29.857, 0, -5.965 )
+
 [node name="Player" parent="." instance=ExtResource( 1 )]
 
 [node name="Music" type="AudioStreamPlayer" parent="."]
@@ -267,5 +270,8 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -48, 0, 10 )
 
 [node name="Player2Pos" type="Position3D" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -48, 0, -10 )
+
+[node name="Enemy" parent="." instance=ExtResource( 5 )]
+transform = Transform( -0.0347296, 0, -0.196962, 0, 0.2, 0, 0.196962, 0, -0.0347296, -19.4678, 0, 13.564 )
 
 [connection signal="body_entered" from="Maze/Exit" to="Maze/Exit" method="_on_Exit_body_entered"]
