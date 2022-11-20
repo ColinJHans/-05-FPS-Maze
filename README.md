@@ -4,7 +4,7 @@ Project for MSCH-C 220
 
 Basic First Person Maze
 ## Implementation
-+ added an enemy
++ added multiple enemies
 + a somewhat elaborate level with a clear win con
 + added music and sound effects
 + added a sprint function on left shift
