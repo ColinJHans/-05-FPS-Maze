@@ -19,5 +19,6 @@ Basic First Person Maze
 + Grenades to blow up specific terrain
 + Zombies following a path
 + More levels
++ Multiplayer, I got close but could not figure out what was wrong, took away the mp button as a result
 ## Created by
 Colin Hans
